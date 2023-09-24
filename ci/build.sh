@@ -21,8 +21,8 @@ if [ "$(uname)" == "Darwin" ]; then
   #   security set-keychain-settings -l -u -t 13600 Keys.keychain
   #   security set-key-partition-list -S apple-tool:,apple: -s -k nr4aGPyz Keys.keychain
   # fi
-  # DEV_APP_ID="Developer ID Application: Roland Rabien (3FS7DJDG38)"
-  # DEV_INST_ID="Developer ID Installer: Roland Rabien (3FS7DJDG38)"
+  DEV_APP_ID="Developer ID Application: Roland Rabien (3FS7DJDG38)"
+  DEV_INST_ID="Developer ID Installer: Roland Rabien (3FS7DJDG38)"
 elif [ "$(expr substr $(uname -s) 1 5)" == "Linux" ]; then
   # linux specific stuff
   sudo apt-get update
